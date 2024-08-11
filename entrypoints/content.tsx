@@ -1,9 +1,22 @@
-import onlyfansList from "@/config/onlyfans.json";
-import unrelatedList from "@/config/unrelated.json";
+import onlyfansListLocal from "@/config/onlyfans.json";
+import unrelatedListLocal from "@/config/unrelated.json";
 
 export default defineContentScript({
     matches: ["*://*.twitter.com/*", "*://*.x.com/*"],
     async main() {
+
+        const lists = await browser.storage.local.get(["onlyfansList", "unrelatedList"]);
+
+        let onlyfansList: string[] = lists.onlyfansList ?? [];
+        let unrelatedList: string[] = lists.unrelatedList ?? [];
+
+        if (onlyfansList.length === 0) {
+            onlyfansList = onlyfansList.concat(onlyfansListLocal);
+        }
+
+        if (unrelatedList.length === 0) {
+            unrelatedList = unrelatedList.concat(unrelatedListLocal);
+        }
 
         const userSettings = await browser.storage.local.get(["onlyfansEnabled", "unrelatedEnabled"]);
 

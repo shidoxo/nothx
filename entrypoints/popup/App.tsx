@@ -54,7 +54,7 @@ function App() {
                     <span className="text-lg">{blockedTweetsCount}</span>
                 </div>
             </div>
-            <div className="flex items-center gap-2 w-full bg-black border-t-2 text-white p-1">
+            <div className="flex items-center gap-2 w-full bg-black border-t-2 text-white p-2">
                 <span className="font-bold">NOTHX</span>
                 <div className="flex items-center gap-2 ml-auto">
                     <a href="https://x.com/michalzarsm" target="_blank" rel="noreferrer">
