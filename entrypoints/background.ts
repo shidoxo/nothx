@@ -1,5 +1,7 @@
 export default defineBackground(() => {
-    loadData();
+    loadData().then(() => {
+        console.log("Data loaded");
+    });
 });
 
 async function loadData() {
