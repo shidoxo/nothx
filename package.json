@@ -1,9 +1,8 @@
 {
   "name": "nothx",
-  "description": "nothx - Better Twitter experience",
+  "description": "nothx - Better Twitter/X experience",
   "author": "michalzarsm",
-  "private": true,
-  "version": "0.0.1",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "wxt",
