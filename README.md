@@ -7,12 +7,12 @@
 
 ## Features
 
-✅ Choose which type of content to hide
-✅ Hide tweets/comments from users advertising their OnlyFans or sexual content
-✅ Hide tweets/comments from users posting unrelated content
-⬜ Local custom allowlist
-⬜ Local custom blocklist
-⬜ Easily report users posting sexual or unrelated content where it doesn't belong
+✅ Choose which type of content to hide<br />
+✅ Hide tweets/comments from users advertising their OnlyFans or sexual content<br />
+✅ Hide tweets/comments from users posting unrelated content<br />
+⬜ Local custom allowlist<br />
+⬜ Local custom blocklist<br />
+⬜ Easily report users posting sexual or unrelated content where it doesn't belong<br />
 
 ## Links
 
@@ -31,6 +31,9 @@ Build: `npm run build`<br />
 ## Contribution
 
 Easiest way to contribute is to help maintain high quality block lists by adding/removing/updating users from lists.
+
+[Onlyfans/Sexual Content List](https://github.com/michalzarsm/nothx/blob/main/config/onlyfans.json)<br />
+[Unrelated Content List](https://github.com/michalzarsm/nothx/blob/main/config/unrelated.json)<br />
 
 If while browsing Twitter/X you notice an account that is not blocked by our lists and is posting sexual or unrelated content where it doesn't belong, please submit their username by [...] (To be updated.) 
 
