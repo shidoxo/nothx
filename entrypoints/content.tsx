@@ -11,17 +11,29 @@ export default defineContentScript({
         let unrelatedList: string[] = lists.unrelatedList ?? [];
 
         if (onlyfansList.length === 0) {
+            console.log("onlyfansList is empty, loading from local");
             onlyfansList = onlyfansList.concat(onlyfansListLocal);
+        } else {
+            console.log("onlyfansList is not empty, loading from storage");
         }
 
         if (unrelatedList.length === 0) {
+            console.log("unrelatedList is empty, loading from local");
             unrelatedList = unrelatedList.concat(unrelatedListLocal);
+        } else {
+            console.log("unrelatedList is not empty, loading from storage");
         }
+
+        console.log("onlyfansList entries: ", onlyfansList.length);
+        console.log("unrelatedList entries: ", unrelatedList.length);
 
         const userSettings = await browser.storage.local.get(["onlyfansEnabled", "unrelatedEnabled"]);
 
         const onlyfansEnabled = userSettings.onlyfansEnabled ?? true;
         const unrelatedEnabled = userSettings.unrelatedEnabled ?? true;
+
+        console.log("onlyfansEnabled: ", onlyfansEnabled);
+        console.log("unrelatedEnabled: ", unrelatedEnabled);
 
         function increaseBlockedTweetsCount() {
             browser.storage.local.get(["blockedTweetsCount"]).then((result) => {
