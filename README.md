@@ -23,10 +23,10 @@
 
 nothx is using [WXT](https://wxt.dev/) framework.
 
-Clone the repository: `git clone https://github.com/michalzarsm/nothx`
-Install dependencies: `npm install`
-Run in development mode: `npm run dev`
-Build: `npm run build`
+Clone the repository: `git clone https://github.com/michalzarsm/nothx`<br />
+Install dependencies: `npm install`<br />
+Run in development mode: `npm run dev`<br />
+Build: `npm run build`<br />
 
 ## Contribution
 
