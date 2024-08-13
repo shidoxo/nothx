@@ -16,8 +16,8 @@
 
 ## Links
 
-- Chrome Extension: [...]
-- Firefox Extension: [...]
+- [Chrome Extension](https://chromewebstore.google.com/detail/nothx/nbdpnlpphdfoodlknhfphenniclnjcgl)
+- [Firefox Extension](https://addons.mozilla.org/en-US/firefox/addon/nothx-better-twitter-x/)
 
 ## Development
 
