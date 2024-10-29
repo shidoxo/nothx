@@ -7,7 +7,7 @@ export default defineBackground(() => {
 async function loadData() {
     async function fetchOnlyfansList() {
         const response = await fetch(
-            "https://raw.githubusercontent.com/michalzarsm/nothx/main/config/onlyfans.json"
+            "https://raw.githubusercontent.com/shidoxo/nothx/main/config/onlyfans.json"
         );
         const onlyfansList: string[] = await response.json().catch((error) => {
             console.log(error);
@@ -17,7 +17,7 @@ async function loadData() {
 
     async function fetchUnrelatedList() {
         const response = await fetch(
-            "https://raw.githubusercontent.com/michalzarsm/nothx/main/config/unrelated.json"
+            "https://raw.githubusercontent.com/shidoxo/nothx/main/config/unrelated.json"
         );
         const unrelatedList: string[] = await response.json().catch((error) => {
             console.log(error);

@@ -57,10 +57,10 @@ function App() {
             <div className="flex items-center gap-2 w-full bg-black border-t-2 text-white p-2">
                 <span className="font-bold">NOTHX</span>
                 <div className="flex items-center gap-2 ml-auto">
-                    <a href="https://x.com/michalzarsm" target="_blank" rel="noreferrer">
+                    <a href="https://x.com/shidoxo" target="_blank" rel="noreferrer">
                         <img src={twitterIcon} alt="Twitter" className="w-6 h-6" />
                     </a>
-                    <a href="https://github.com/michalzarsm/nothx" target="_blank" rel="noreferrer">
+                    <a href="https://github.com/shidoxo/nothx" target="_blank" rel="noreferrer">
                         <img src={githubIcon} alt="GitHub" className="w-6 h-6" />
                     </a>
                 </div>
