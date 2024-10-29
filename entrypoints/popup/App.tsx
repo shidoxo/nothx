@@ -4,7 +4,6 @@ import twitterIcon from "@/assets/twitter.svg";
 import { useState, useEffect } from "react";
 
 function App() {
-
     const [onlyfansEnabled, setOnlyfansEnabled] = useState(true);
     const [unrelatedEnabled, setUnrelatedEnabled] = useState(true);
     const [blockedTweetsCount, setBlockedTweetsCount] = useState(0);
